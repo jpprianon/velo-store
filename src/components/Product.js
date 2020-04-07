@@ -18,7 +18,7 @@ export default function Product({ product }) {
                         src={product.image} 
                         className="card-img-top p-5" 
                         alt="product"
-                        style={{height: "320px"}}
+                        style={{height: "100%"}}
                     />
                     <div className="product-icons">
                         <Link to={`/products/${product.id}`} 
@@ -45,12 +45,11 @@ export default function Product({ product }) {
 
 const ProductWrapper = styled.div`
 .card {
-    box-shadow: 5px 5px 5px 0px rgba(0, 0, 0, 0.3);
     transition: var(--mainTransition);
     height: 100%;
   }
   .card:hover {
-    box-shadow: 7px 10px 5px 0px rgba(0, 0, 0, 0.5);
+    box-shadow: 4px 5px 4px 0px rgba(0, 0, 0, 0.3);
     cursor: pointer;
   }
   .card-img-top {
@@ -75,7 +74,7 @@ const ProductWrapper = styled.div`
     font-size: 2.5rem;
     margin: 1rem;
     padding: 0.5rem;
-    color: var(--primaryColor);
+    color:#68b095;
     background: var(--mainBlack);
     border-radius: 0.5rem;
   }

@@ -10,11 +10,12 @@ export default function Sidebar() {
         {value => {
         const { links, sidebarOpen, handleSidebar } = value;
             return ( 
+
             <SideWrapper show={sidebarOpen}>
-                <ul>
+                <ul className="test" >
                     {links.map(link => {
                         return (
-                            <li key={link.id}>
+                            <li className="test2" key={link.id}>
                             <Link to={link.path} 
                             className="sidebar-link" onClick={handleSidebar}> 
                             {link.text}
@@ -30,39 +31,59 @@ export default function Sidebar() {
     );
 }
 
-const SideWrapper = styled.nav`
-    position: fixed;
-    top:90px;
-    left:0;
-    width:100%;
-    height:100%;
-    background:var(--mainGrey);
-    z-index:1;
-    border-right: 4px solid var(--primaryColor);
+const SideWrapper = styled.div`
+@media (min-width:768px){
+    display:flex;
+    align-items:center;
+    justify-content: space-between;
+    max-width: 1770px;
+    height:auto;
+    margin:0 auto;
+}
+
+.test{
+    display: flex;
+    align-items: center;
+    height:auto;
+    margin:0 auto;
+}
+
+.test2{
+    padding:0rem 1rem 0.6rem 0rem;
+}
+
+  
+    
+
     transition: var(--mainTransition);
-    transform: ${props => (props.show ? "translateX(0)" : "translateX(-100%)")};
-    ul {
+    li {
         list-style-type:none;
-        padding:0 !important;
     }
-.sidebar-link {
-    display: block;
-    font-size: 1.5rem;
+    .sidebar-link {
+    text-decoration:none;
+    font-size: 1.3rem;
     text-transform: capitalize;
     color: var(--mainBlack);
-    padding: 0.5rem 1.5rem;
-    background: transparent;
+    padding: 1rem 2rem 0.5rem 1rem;
     transition:var(--mainTransition);
+    cursor: pointer;
+    transform: ${props => (props.show ? "translateX(0)" : "translateX(-100%)")};
 
 }
 
 .sidebar-link:hover{
-    background: var(--primaryColor);
+    background: #86aa51;
+    padding: 1rem 0.5rem 0.3rem 0.5rem;
     color: var(--mainWhite);
-    padding:0.5rem 1.5rem 0.5rem 2.5rem;
-    text-decoration:none;
 }
-@media (min-width:576px) {
-    width:20rem;
-}
+
+height:${props => (props.show ? '45px' : '0px' )};
+overflow:hidden;
+@media (min-width:768px){
+    height:auto;
+    margin:0 auto;
+    
+}  
+
+
 `;

@@ -31,7 +31,7 @@ body{
 
 .main-link {
   padding: 0.5rem 1rem;
-  background: var(--primaryColor);
+  background: #86aa51;
   color: var(--mainWhite);
   display: inline-block;
   border-radius: 4px;
@@ -44,7 +44,7 @@ body{
 .main-link:hover {
   background: var(--darkGrey);
   text-decoration: none;
-  color: var(--primaryColor);
+  color: #86aa51;
   outline-color: var(--darkGrey);
 }
 

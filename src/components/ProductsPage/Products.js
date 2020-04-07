@@ -29,7 +29,7 @@ export default function Products() {
                     <div className="row py-5">
                         {filteredProducts.length === 0?(
                             <div className="col text-title text-center">
-                            Désolé, not items matched your search
+                            Désolé, il n'y à pas de produit qui corespond a votre recherche
                             </div>
                         ):
                         

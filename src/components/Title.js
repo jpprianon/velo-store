@@ -18,7 +18,7 @@ text-align: ${props => (props.center?"center" : "left")};
 .title-underline{
     height:0.25rem;
     width:7rem;
-    background: var(--primaryColor);
+    background: #68b095;
     margin:${props => (props.center?"0 auto" : "0")};
 }
 `;

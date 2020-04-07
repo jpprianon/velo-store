@@ -6,15 +6,15 @@ export default function Contact() {
         <section className="py-5">
             <div className="row">
                 <div className="col-10 mx-auto col-md-6 my-3">
-                    <Title title="contactez nous Tel: 0692 30 64 61"></Title>
+                    <Title title="contact"></Title>
                     <form className="mt-5" action="https://formspree.io/your@email.com" method="POST">
                         {/* first */}
                         <div className="form-group">
                             <input 
                             type="text" 
-                            name="firstName" 
+                            name="Nom" 
                             className="form-control"
-                            placeholder="john smith" 
+                            placeholder="john payet" 
 
                             />
                         </div>
@@ -32,7 +32,7 @@ export default function Contact() {
                         <div className="form-group">
                             <input 
                             type="text" 
-                            name="subject" 
+                            name="subjet" 
                             className="form-control"
                             placeholder="import!!!!" 
                             

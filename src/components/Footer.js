@@ -35,7 +35,7 @@ export default function Footer() {
 
 
 const FooterWrapper = styled.footer`
-background:var(--darkGrey);
+background:#282728;
 color: var(--mainWhite);
 .icon {
   font-size: 1.5rem;

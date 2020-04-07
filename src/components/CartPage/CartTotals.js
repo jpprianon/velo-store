@@ -14,8 +14,8 @@ export default function CartTotals() {
                         text-capitalize mb-4" onClick={clearCart}>
                             clear cart
                         </button>
-                        <h3>subtotal : {cartSubTotal}€</h3>
-                        <h3>tax : {cartTax}€</h3>
+                        <h3>sous total : {cartSubTotal}€</h3>
+                        <h3>tva : {cartTax}€</h3>
                         <h3>total : {cartTotal}€</h3>
                     </div>
                     );

@@ -18,7 +18,7 @@ text-align:left;
 display:flex;
 align-items:center;
 justify-content:center;
-min-height:${props =>(props.max?"50vh" : "60vh")};
+min-height:${props =>(props.max?"48vh" : "65vh")};
 color:var(--mainWhite);
 background:linear-gradient(var(--primaryRGBA),
 var(--primaryRGBA)), 
@@ -28,6 +28,7 @@ url(${props => props.img}) center/cover no-repeat;
     padding-top:2rem;
     padding-left:30px;
     font-size:3.5rem;
+    font-weight:bold;
     text-transform:uppercase;
     letter-spacing:var(--mainSpacing);
 }

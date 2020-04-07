@@ -1,12 +1,12 @@
 import React from 'react'
 import Products from '../components/ProductsPage/Products'
-import Hero from '../components/Hero';
-import productsBcg from '../images/productsBcg.jpeg'
+import Jumbotron from '../components/jumbotron'
 
 export default function ProductsPage() {
     return (
         <>
-           <Hero img={productsBcg} />
+        
+            <Jumbotron title="Produit de qualité" />
            <Products />
             
         </>

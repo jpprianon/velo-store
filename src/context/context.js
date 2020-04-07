@@ -166,7 +166,7 @@ setSingleProduct = id => {
 };
 // handle cart
 handleCart = () => {
-    this.setState({cartOpen:!this.state.sidebarOpen});
+    this.setState({cartOpen:!this.state.cartOpen});
 };
 //close cart
 closeCart = () => {
@@ -255,7 +255,7 @@ handleChange = (event) =>{
     this.sortData)
 };
 sortData = () =>{
-        const {storeProducts,price,company,shipping,search} = this.state;
+        const {storeProducts,price,marque,shipping,search} = this.state;
 
         let tempPrice = parseInt(price);
 
@@ -264,8 +264,8 @@ sortData = () =>{
         // filtering based on company
         tempProducts = tempProducts.filter(item => item.price <= tempPrice)
         // filtering based on company
-        if(company !=="all"){
-            tempProducts = tempProducts.filter(item =>item.compagny === company)
+        if(marque !=="all"){
+            tempProducts = tempProducts.filter(item =>item.marque === marque)
         }
 if(shipping){
     tempProducts = tempProducts.filter(item => item.freeShipping === true);

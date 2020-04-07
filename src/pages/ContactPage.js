@@ -1,12 +1,12 @@
 import React from 'react'
-import Hero from '../components/Hero'
-import contactImg from '../images/contactBcg.jpeg';
 import Contact from '../components/ContactPage/Contact'
+
+import Jumbotron from '../components/jumbotron'
 
 export default function ContactPage() {
     return (
         <>
-            <Hero img={contactImg} />
+        <Jumbotron title="Contactez-Nous au 0692 30 64 61"/>
             <Contact />
         </>
     )

@@ -28,17 +28,19 @@ export default function Navbar() {
         );
     }
 
-const NavWrapper = styled.nav`
+const NavWrapper = styled.ul`
+@media (min-width:768px){
+}
 position:-webkit-sticky;
 position:sticky;
 top:0;
 width:100%;
-padding: 1rem 1.5rem;
-background:var(--mainGrey);
-border-bottom: 3px solid var(--primaryColor);
+padding: 0.6rem 0rem 0.5rem 0rem;
+background: #282728;
 z-index:1;
 
 .nav-center{
+  padding: 0.4rem 1rem;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -46,7 +48,9 @@ z-index:1;
   margin: 0 auto;
 }
 .nav-icon {
+
   font-size:1.5rem;
+  color:#86aa51;
   cursor: pointer;
 }
 .nav-cart{
@@ -54,6 +58,7 @@ z-index:1;
 }
 
 .cart-items{
+
   background:var(--primaryColor);
   color:var(--mainWhite);
   font-size: 0.85rem;

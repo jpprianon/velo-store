@@ -1,13 +1,13 @@
 import React from 'react';
-import Hero from '../components/Hero';
-import cartBcg from '../images/storeBcg.jpeg';
+import Jumbotron from '../components/jumbotron'
 import CartSection from '../components/CartPage';
 
 
 export default function CartPage() {
     return (
         <>
-        <Hero img={cartBcg} />
+        <Jumbotron title="Votre panier" />
+        
         <CartSection />
         </>
     )

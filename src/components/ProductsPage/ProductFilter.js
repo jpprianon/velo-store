@@ -10,7 +10,7 @@ export default function ProductFilter () {
                     search, 
                     min,
                     max,
-                    company,
+                    marque,
                     price,
                     shipping,
                     handleChange,
@@ -20,7 +20,7 @@ export default function ProductFilter () {
                 let companies = new Set()
                 companies.add('all');
                 for(let product in storeProducts ){
-                    companies.add(storeProducts[product]["company"]);
+                    companies.add(storeProducts[product]["marque"]);
                 }
                 companies = [...companies];
                 return (
@@ -42,20 +42,20 @@ export default function ProductFilter () {
                 {/* end of text search*/}
                 {/* category search*/}
 <div>
-    <label htmlFor="company">company</label>
+    <label htmlFor="marque">marque</label>
     <select 
-    name="company" 
-    id="company" 
+    name="marque" 
+    id="marque" 
     onChange={handleChange}
-    value={company}
+    value={marque}
     className="filter-item">
         {/*<option value="all">all</option>
         <option value="bafang">bafang</option>
                 <option value="samsung">samsung</option>*/}
     {
-        companies.map((company,index)=>{
+        companies.map((marque,index)=>{
             return (
-            <option key={index} value={company}>{company}</option>
+            <option key={index} value={marque}>{marque}</option>
             );
         })}
     </select>
